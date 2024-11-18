@@ -35,7 +35,7 @@ Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
-" let g:SnazzyTransparent = 1
+let g:SnazzyTransparent = 1
 color snazzy
 
 " initial coc.nvim plugins
