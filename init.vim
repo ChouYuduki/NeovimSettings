@@ -6,6 +6,12 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+set autoindent
+set cindent
 
 
 noremap h i
@@ -61,7 +67,6 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
 
 " Use <ctrl-space> to trigger completion
 inoremap <silent><expr> <c-space> coc#refresh()
